@@ -1,0 +1,18 @@
+places = {
+    "hyderabad": ["Charminar", "Golconda Fort", "Hussain Sagar Lake"],
+    "delhi": ["India Gate", "Red Fort", "Qutub Minar"],
+    "agra": ["Taj Mahal", "Agra Fort"]
+}
+city = input("Enter city name: ").lower()
+if city in places:
+    print("\nTourist Places:")
+    for place in places[city]:
+        print("-", place)
+else:
+    print("No tourist places found.")
+
+OUTPUT:
+Enter city name: agra
+Tourist Places:
+- Taj Mahal
+- Agra Fort
